@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    height: 80px;
+    width: 1440px;
+    left: 0;
+    top: 0;
+    background: #FFFFFF;
+}
