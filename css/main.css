@@ -1,20 +1,10 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
 a{
     text-decoration: none; 
 }
 
 a:visited{
-    color: blue;
+    color: #697CA6;
 }
-
-
 
 .header {
     position: absolute;
@@ -29,14 +19,14 @@ a:visited{
     width: 1206px;
     height: 43px;
     left: 117px;
-    top: 19px;
+    top: 0px;
 }
 
 .hedaerLogo{
     position: absolute;
     width: 26px;
     height: 26px;
-    left: 117px;
+    left: 0px;
     top: 27px;
     
 }
@@ -45,7 +35,7 @@ a:visited{
     position: absolute;
     width: 427px;
     height: 15px;
-    left: 216px;
+    left: 99px;
     top: 33px;
     display: flex;
     justify-content: space-between;
@@ -54,13 +44,15 @@ a:visited{
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
+    color: #697CA6;
+
 }
 
 .socialMedia{
     position: absolute;
     width: 162px;
     height: 17px;
-    left: 1004px;
+    left: 887px;
     top: 32px;
     display: flex;
     justify-content: space-between;
@@ -71,9 +63,10 @@ a:visited{
     position: absolute;
     width: 113px;
     height: 43px;
-    left: 1210px;
+    left: 1093px;
     top: 19px;
     background: #D2E1FF;
+    border-radius: 2px;
 }
 
 .headerButton{
@@ -112,5 +105,46 @@ a:visited{
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
 }
+.heroImageContent{
+    position: absolute;
+    width: 1440px;
+    height: 570px;
+    left: 0px;
+    top: 80px;
+    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+}
+
+.elipse{
+    position: absolute;
+    right: 0.5px;
+    top: 407px;
+}
+
+.groupDot{
+    position: absolute;
+    width: 48px;
+    height: 8px;
+    left: 696px;
+    top: 534px;
+}
+
+.dot1{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.dot2{
+    position: absolute;
+    left: 20;
+    top: 20;
+}
+.dot3{
+    position: absolute;
+    left: 40;
+    top: 10;
+}
+
 
