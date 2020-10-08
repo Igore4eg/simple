@@ -1,3 +1,14 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+    }
+body {
+    min-width: 100%;
+    }
+
+
 a{
     text-decoration: none; 
 }
@@ -78,7 +89,13 @@ a:visited{
     text-shadow: 0px 0px 5px #E6E6E6;
 }
 
+
+
+
 .getStarted{
+    background: #D2E1FF;
+    border-radius: 2px;
+    border: 13px 15px 13px 16px;
     position: absolute;
     width: 82px;
     height: 17px;
