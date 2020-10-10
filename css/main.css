@@ -26,10 +26,6 @@ head{
 }
 
 .headerContent{
-    width: 1206px;
-    height: 43px;
-    left: 117px;
-    top: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,15 +34,12 @@ head{
 .headerLogo{
     width: 26px;
     height: 26px;
-    left: 0px;
-    top: 27px;
 }
 
 .menu{
     width: 427px;
     height: 15px;
-    left: 99px;
-    top: 33px;
+    
     display: flex;
     justify-content: space-between;
     font-family: Quicksand;
@@ -69,8 +62,6 @@ head{
 .socialMedia{
     width: 162px;
     height: 17px;
-    left: 887px;
-    top: 32px;
     display: flex;
     justify-content: space-between;
 }
@@ -100,8 +91,11 @@ head{
     font-size: 13px;
     line-height: 16px;
         
-    color: #3A79FF;
-    border-radius: 2px;
+    color:  black;
+    border: 100% 16px;
+    background: #D2E1FF;
+    display: flex;
+
 }
 
 #buttonHome{
@@ -117,11 +111,6 @@ head{
 }
 
 .heroImageContent{
-    position: absolute;
-    width: 1440px;
-    height: 570px;
-    left: 0px;
-    top: 80px;
     background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
 }
 
@@ -167,6 +156,11 @@ head{
     height: 465px;
     left: 0px;
     top: 68px;
+}
+
+.sponsor{
+    display: flex;
+    
 }
 
 
