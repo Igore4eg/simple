@@ -9,15 +9,17 @@ a:visited{
 body{
     display: flex;
     width: auto;
+    flex-direction: column;
 }
 
 head{
     position: sticky;
+    height: 80px;
 }
 
 .header {
-    width: 100%;
-    height: 80px;
+    width: 90%;
+    height: 43px;
     left: 100px;
     top: 0px;
     display: flex;
@@ -115,17 +117,11 @@ head{
 }
 
 .elipse{
-    position: absolute;
-    right: 0.5px;
-    top: 407px;
+
 }
 
 .groupDot{
-    position: absolute;
-    width: 48px;
-    height: 8px;
-    left: 696px;
-    top: 534px;
+
 }
 
 .dot1{
@@ -143,24 +139,25 @@ head{
 }
 
 .heroImageContainer{
-    position: absolute;
-    width: 1441px;
-    height: 533px;
-    left: 0px;
-    top: 37px;
+
 }
 
 .chart{
-    position: absolute;
-    width: 1441px;
-    height: 465px;
-    left: 0px;
-    top: 68px;
+
 }
 
 .sponsor{
     display: flex;
-    
+    height: 145px;
+    align-items: center;
+    background: #FFFFFF;
+    justify-content: center;
 }
 
-
+.sponsorContent{
+    display: flex;
+    height: 29px;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+}
