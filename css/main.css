@@ -12,30 +12,24 @@ body{
     flex-direction: column;
 }
 
-head{
+header{
     position: sticky;
     height: 80px;
-}
-
-.header {
-    width: 90%;
-    height: 43px;
-    left: 100px;
-    top: 0px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .headerContent{
+    width: 83.75%;
+    height: 43px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .headerLogo{
-    width: 26px;
-    height: 26px;
+
 }
 
 .menu{
@@ -62,7 +56,7 @@ head{
 }
 
 .socialMedia{
-    width: 162px;
+    width: 13%;
     height: 17px;
     display: flex;
     justify-content: space-between;
@@ -86,6 +80,7 @@ head{
 
 
 .getStarted{
+    height: 43px;
     align-self: flex-end;
     font-family: Quicksand;    
     font-style: normal;
