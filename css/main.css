@@ -35,7 +35,6 @@ header{
 .menu{
     width: 427px;
     height: 15px;
-    
     display: flex;
     justify-content: space-between;
     font-family: Quicksand;
@@ -78,7 +77,6 @@ header{
     color: #757E9A;
 }
 
-
 .getStarted{
     height: 43px;
     align-self: flex-end;
@@ -107,7 +105,8 @@ header{
     color: #5E81FE;
 }
 
-.heroImageContent{
+.heroImage{
+    height: 570px;
     background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
 }
 
@@ -117,20 +116,6 @@ header{
 
 .groupDot{
 
-}
-
-.dot1{
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.dot2{
-    position: absolute;
-    left: 20px;
-}
-.dot3{
-    position: absolute;
-    left: 40px;
 }
 
 .heroImageContainer{
@@ -155,4 +140,9 @@ header{
     align-items: center;
     width: 60%;
     justify-content: space-between;
+}
+
+.planAndManage{
+    height: 776px;
+    background: #F5F8FF;
 }
