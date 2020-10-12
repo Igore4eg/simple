@@ -19,13 +19,27 @@ header{
     align-items: center;
     justify-content: center;
 }
-
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row {
+    margin: -15px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
 .headerContent{
-    width: 83.75%;
-    height: 43px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 18px 0;
 }
 
 .headerLogo{
@@ -78,19 +92,18 @@ header{
 }
 
 .getStarted{
-    height: 43px;
-    align-self: flex-end;
     font-family: Quicksand;    
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
     line-height: 16px;
+    padding: 16px 20px;
+    border-radius: 2px;
         
-    color:  black;
-    border: 100% 16px;
+    color:  #3A79FF;
     background: #D2E1FF;
-    display: flex;
-
+    display: inline-flex;
+    
 }
 
 #buttonHome{
