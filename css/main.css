@@ -2,10 +2,6 @@ a{
     text-decoration: none; 
 }
 
-a:visited{
-    color: #697CA6;
-}
-
 body{
     display: flex;
     width: auto;
@@ -14,10 +10,12 @@ body{
 
 header{
     position: sticky;
+    top: 0;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #FFFFFF;
 }
 .container {
     width: 1200px;
@@ -41,9 +39,13 @@ header{
     justify-content: space-between;
     padding: 18px 0;
 }
-
-.headerLogo{
-
+.left{
+    display: flex;
+    align-items: center;
+}
+.right{
+    display: flex;
+    align-items: center;
 }
 
 .menu{
@@ -75,6 +77,9 @@ header{
     justify-content: space-between;
 }
 
+.fab{
+    padding: 0 15px;
+}
 .fa-facebook-f{
     color: #B6BAC7;
 }
@@ -99,7 +104,6 @@ header{
     line-height: 16px;
     padding: 16px 20px;
     border-radius: 2px;
-        
     color:  #3A79FF;
     background: #D2E1FF;
     display: inline-flex;
@@ -123,21 +127,16 @@ header{
     background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
 }
 
-.elipse{
-
+.heroImageContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.groupDot{
-
-}
-
 .heroImageContainer{
-
+    
 }
 
-.chart{
 
-}
 
 .sponsor{
     display: flex;
