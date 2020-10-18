@@ -6,6 +6,7 @@ body{
     display: flex;
     width: auto;
     flex-direction: column;
+    color: #8d96bd;
 }
 
 header{
@@ -16,6 +17,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
+    z-index: 1;
 }
 .container {
     width: 1200px;
@@ -28,28 +30,14 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
-.col-lg-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 15px;
-}
-.headerContent{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 0;
-}
-.left{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.right{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
+.headerContent{
+    display: grid;
+    grid-template-columns: 64px 1fr 175px 115px;
+    padding: 18px 0;
+    text-align: center;
+    
+}
 
 .menu{
     display: flex;
@@ -60,6 +48,7 @@ header{
     font-size: 12px;
     line-height: 15px;
     color: #697CA6;
+    width: 1fr;
 }
 
 .headerButton{
@@ -73,6 +62,8 @@ header{
     height: 17px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    padding: 21px 0;
 }
 
 .fab{
@@ -119,55 +110,52 @@ header{
     color: #5E81FE;
 }
 
-.heroImage{
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
+.main-slider{
+    height: 570px;
+}
+.main-slide{
+    height: 100%;
+	display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+    background-size: cover;
+    background-position: bottom center;
 }
-
-.page1{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.text{
-
+.main-slide-content{
+	max-width: 613px;
+	padding: 0 15px;
+	text-align: center;
+	margin: 90px 0 0;
 }
 
 .page-1-str-1{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #3D4F9F;
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #3d4f9f;
+	margin: 0 0 16px;
 }
 
 .page-1-str-2{
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: center;
-    color: #3D4F9F;
+	font-family: 'Quicksand';
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 60px;
+	color: #3D4F9F;
+	margin: 0 0 20px;
+}
+.page-1-str-2 strong{
+    font-weight: 500;
 }
 
-.page-1-str-3{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 29px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #8D96BD;
+.main-slide-content p {
+	font-family: 'Roboto';
+	font-size: 15px;
+	line-height: 29px;
+	letter-spacing: 0.03em;
+	max-width: 500px;
+	margin: 0 auto 10px;
 }
 
 .sponsor{
@@ -182,9 +170,9 @@ header{
     display: flex;
     height: 29px;
     align-items: center;
-    width: 60%;
-    justify-content: space-between;
+    justify-content: space-around;;
 }
+
 
 .planAndManage{
     height: 776px;
@@ -261,6 +249,16 @@ header{
 
 .page__3{
     height: 885px;
+}
+.container__3{
+    height: 633px;
+} 
+
+.page__3_main{
+    height: 100%;
+	display: flex;
+    justify-content: center;
+    background-size: cover;
     
-}   
+}
 

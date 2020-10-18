@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -14,60 +14,67 @@
     <header>
         <div class="container">
             <div class="headerContent">
-                <div class="left">
+                
                     <div class="headerLogo">
                     <img src=".\img\logo.svg" alt=""> 
                     </div>
 
-                    <div class="menu">
+                    <nav class="menu">
                         <div class="headerButton" id="buttonHome"><a href="#">Home</a></div>
                         <div class="headerButton"><a href="#">Blog</a></div>
                         <div class="headerButton"><a href="#">Features</a></div>
                         <div class="headerButton"><a href="#">Pricing</a></div>
                         <div class="headerButton"><a href="#">Documentation</a></div>
-                    </div>
-                </div>
+                    </nav>
+                
 
-                <div class="right">
+                
                     <div class=" socialMedia">
                         <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://web.telegram.org/"> <i class="fab fa-telegram-plane"></i></a>
                         <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a> 
                         <a href="https://medium.com/"><i class="fab fa-medium-m"></i> </a>
                     </div>
+
                     <div class="button-get-strtaed">
                         <a href="#" class="getStarted">Get Started</a>
                     </div>
-                </div>       
+                    
             </div>
         </div>
     </header>
 
 
     <section class="heroImage">
-        <img src=".\img\page1.svg" alt="" class="page1"> 
-        <div class="text">
-            <span class="page-1-str-1">PLAN YOUR LIFE</span> 
-            <H1 class="page-1-str-2">Increase your productivity</H1> 
-            <span class="page-1-str-3">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. 
-                Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</span>
-        </div>
+        <div class="main-slider">
+            <div class="main-slide " style="background-image: url('./img/page1.svg');">
+                <div class="main-slide-content">
+                    <div class="page-1-str-1">PLAN YOUR LIFE</div>
+                    <div class="page-1-str-2">Increase your <strong>productivity</strong></div> 
+                    <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. 
+                        Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p> 
+                    <button class="btn-play" aria-label="Play">
+                        Play
+                    </button>
+                </div>
+            </div>
+        </div>            
     </section>
 
-    <section class="sponsor">
-        <div class="sponsorContent">
-            <a href="https://www.atlassian.com/ru/software/bitbucket"><img src=".\img\Bitbucket.svg" alt=""></a>
-            <a href="https://www.apple.com/ru/watch/"><img src=".\img\apple.svg" alt=""> </a>
-            <a href="https://www.facebook.com/"><img src=".\img\facebook.svg" alt=""> </a>
-            <a href="https://www.atlassian.com/ru"><img src=".\img\Atlassian.svg" alt=""></a>
-            <a href="https://www.audi.ua/ua"><img src=".\img\audi.svg" alt=""></a>
+    <section class="sponsor ">
+        <div class="sponsorContent container">
+            <a href="https://www.atlassian.com/ru/software/bitbucket"><img src=".\img\Bitbucket.svg" alt="Bitbucket"></a>
+            <a href="https://www.apple.com/ru/watch/"><img src=".\img\apple.svg" alt="AppleWatch"> </a>
+            <a href="https://www.facebook.com/"><img src=".\img\facebook.svg" alt="Facebook"> </a>
+            <a href="https://www.atlassian.com/ru"><img src=".\img\Atlassian.svg" alt="Atlassian"></a>
+            <a href="https://www.audi.ua/ua"><img src=".\img\audi.svg" alt="Audi"></a>
         </div>
     </section>
 
     <section class="planAndManage">
         <div class="container">
-            <div class="row page__2">
-                <div class="col-lg-6 page-2-1">
+            <div class="page__2 row ">
+                <div class="page-2-1">
                     <div class="text">
                         <span class="page-1-str-1">DESKTOP AND MOBILE APP</span> 
                         <H1 class="page-1-str-2">Plan and manage</H1> 
@@ -81,18 +88,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="page-2-2">
+                <div class="page-2-2">
                         <img src=".\img\illustration.png" alt="" style="width: 100%;">
-                    </div>                    
-                </div>
+                </div>                    
+                
             </div>
         </div>
     </section>
 
     <section class="page__3">
         <div class="container__3">
-            <div class="page__3_main" style="background-image: url('.img/clouds_page_3.svg');">
+            <div class="page__3_main" style="background-image: url('./img/clouds_page_3.svg');">
                 <div class="content__3">
                     <div>
                         ABOUT US
