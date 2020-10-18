@@ -227,6 +227,11 @@ header{
     background: #FFFFFF;
 }
 
+.plan__and__manage{
+    height: 776px;
+    background: #F5F8FF;
+}
+
 .page__2{
     display: flex;
     justify-content: space-between;
@@ -236,16 +241,13 @@ header{
     margin: 0px 0px;
 }
 
+
 .page-2-1{
     display: flex;
     flex-direction: column;
 }
 
-.page-2-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-}
+
 
 .page__3{
     height: 885px;
