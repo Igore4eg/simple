@@ -157,6 +157,21 @@ header{
 .page-1-str-2 strong{
     font-weight: 500;
 }
+.button-play{
+    background:  #FFFFFF;
+    padding: 14px 16px 13px 17.25px;
+    border-radius: 50%; 
+    line-height: 70px;
+    text-align: center;
+}
+
+i.fas{
+    padding: 0;
+}
+.fa-play{
+    color: #5E81FF;
+    padding: 0;
+}
 
 .main-slide-content p {
 	font-family: 'Roboto';
