@@ -34,34 +34,39 @@ header{
 .headerContent{
     display: flex;
     padding: 18px 0;
-    text-align: center;
-    
+    align-items: center;   
+}
+
+.header-logo{
+    display: inline-flex;
 }
 
 .menu{
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    flex-grow: 3;
+    justify-content: start;
+    align-items: center;
     font-family: Quicksand;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
     color: #697CA6;
+    margin-left: 50px;
 }
 
 .headerButton{
     font-size: 12px;
     line-height: 15px;
     text-shadow: 0px 0px 5px #E6E6E6;
+    padding: 21px;
 }
 
 .socialMedia{
     display: inline-flex;
     justify-content: space-between;
     text-align: center;
-    width: 176px;
-    padding: 21px 0;
-    
+    width: 176px; 
 }
 
 .fab{
@@ -114,6 +119,8 @@ header{
 
 .main-slider{
     height: 570px;
+    border-top: 1px solid #D8E3FE;
+    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
 }
 .main-slide{
     height: 100%;
@@ -260,5 +267,5 @@ header{
     height: 100%;
 	display: flex;
     justify-content: center;  
-      
+
 }
