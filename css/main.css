@@ -170,8 +170,11 @@ i.fas{
     padding: 0;
 }
 .fa-play{
-    color: #5E81FF;
     padding: 0;
+}
+
+.play_1{
+    color: #5E81FF;
 }
 
 .main-slide-content p {
@@ -213,7 +216,6 @@ i.fas{
 
 .page__2{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     align-content: center;
 }
@@ -225,6 +227,9 @@ i.fas{
 
 }
 
+.group-button{
+    margin-top: 47px;
+}
 .page-2-button-1{
     width: 130px;
     font-family: 'Quicksand';    
@@ -261,9 +266,10 @@ i.fas{
     box-sizing: border-box;
     
 }
-.fa-play{
-    padding: 0 6px;
+
+.play_2{
     color: #FFFFFF;
+    padding: 0 6px;
 }
 
 
