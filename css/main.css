@@ -66,7 +66,8 @@ header{
     display: inline-flex;
     justify-content: space-between;
     text-align: center;
-    width: 176px; 
+    width: 176px;
+    margin: 0 50px;
 }
 
 .fab{
@@ -199,20 +200,38 @@ i.fas{
     justify-content: space-around;
 }
 
-
 .planAndManage{
     height: 776px;
     background: #F5F8FF;
+    display: flex;
+    justify-content: center;
 }
 
+.row{
+    margin: 0px 0px;
+    }
+
+.page__2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.page-2-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 415px;
+
+}
 
 .page-2-button-1{
+    width: 130px;
     font-family: 'Quicksand';    
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
     line-height: 16px;
-    padding: 16px 20px;
     border-radius: 2px;
     padding: 13px 25px;
     color:  #FFFFFF;;
@@ -224,18 +243,18 @@ i.fas{
 }
 
 .page-2-button-2{
+    width: 130px;
     font-family: 'Quicksand';    
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    padding: 16px 20px;
+    padding: 13px 21px;
     border-radius: 2px;
     color:  #ADB4D2;
     font-style: normal;
     align-items: center;
     text-align: center;
-    padding: 12px 31px;
     background: #F5F8FF;
     display: inline-flex;
     border: 1px solid #D1D1E4;
@@ -244,31 +263,9 @@ i.fas{
 }
 .fa-play{
     padding: 0 6px;
+    color: #FFFFFF;
 }
 
-.play{
-    background: #FFFFFF;
-}
-
-.page__2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.row{
-    margin: 0px 0px;
-}
-
-.page-2-1{
-    display: flex;
-    flex-direction: column;
-}
-
-.page-2-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-}
 
 .page__3{
     height: 885px;
@@ -280,8 +277,7 @@ i.fas{
 } 
 
 .page__3_main{
-    height: 100%;
-	display: flex;
+    display: flex;
     justify-content: center;  
 
 }
