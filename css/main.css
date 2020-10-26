@@ -2,6 +2,8 @@ a{
     text-decoration: none; 
 }
 
+
+
 body{
     display: flex;
     width: auto;
@@ -35,6 +37,24 @@ header{
     display: flex;
     padding: 18px 0;
     align-items: center;   
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        height: auto;
+    }
+    
+    .headerContent{
+      /*display property will be overriden as any class further inside this scope*/
+      height: auto;
+      display: block;
+    }
+    .menu{
+        /*display property will be overriden as any class further inside this scope*/
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+      }
 }
 
 .header-logo{
@@ -196,12 +216,22 @@ i.fas{
     border-bottom: 1px solid #D8E3FE;
 }
 
+
 .sponsorContent{
     display: flex;
     height: 29px;
     align-items: center;
     justify-content: space-around;
 }
+
+@media screen and (max-width: 768px) {
+    .sponsorContent{
+      /*display property will be overriden as any class further inside this scope*/
+      height: auto;
+      display: block;
+    }
+}
+
 
 .planAndManage{
     height: 776px;
@@ -285,5 +315,4 @@ i.fas{
 .page__3_main{
     display: flex;
     justify-content: center;  
-
 }
