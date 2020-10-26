@@ -146,19 +146,20 @@ header{
 }
 
 @media screen and (max-width: 768px) {
+          /*display property will be overriden as any class further inside this scope*/
     header{
         height: auto;
     }
     
     .headerContent{
-      /*display property will be overriden as any class further inside this scope*/
+
       height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center; 
     }
     .menu{
-        /*display property will be overriden as any class further inside this scope*/
+       
         display: flex;
         flex-direction: column;
         margin-left: 0px;
@@ -266,10 +267,19 @@ i.fas{
 }
 
 @media screen and (max-width: 768px) {
+    .sponsor{
+        height: auto;
+    }
     .sponsorContent{
       /*display property will be overriden as any class further inside this scope*/
       height: auto;
-      display: block;
+      display: flex;
+      flex-direction: column;
+    }
+    .social-button{
+        width: 300px;
+        padding: 20px;
+        border: medium dashed #F4F7FF;
     }
 }
 
