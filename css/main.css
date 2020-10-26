@@ -145,6 +145,33 @@ header{
     color: #5E81FE;
 }
 
+#nav-check, #nav-button {
+    display: none;
+}
+
+#nav-check:checked ~ #nav-button > :nth-child(1){
+    display:none;
+}
+#nav-check:checked ~ #nav-button > :nth-child(2){
+    display:inline-block;
+}
+#nav-check:checked ~ #nav.nav{
+    display:block;
+}
+
+@media screen and (max-width: 600px) {
+    #nav-button {
+        display: inline-block
+    }
+    #nav {
+        display: none;
+    }
+    .headerButton{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 768px) {
           /*display property will be overriden as any class further inside this scope*/
     header{
