@@ -280,33 +280,38 @@ i.fas{
     height: 145px;
     align-items: center;
     background: #FFFFFF;
-    justify-content: center;
     border-top: 1px solid #D8E3FE;
     border-bottom: 1px solid #D8E3FE;
 }
 
 
-.sponsorContent{
+.sponsor__content{
     display: flex;
-    height: 29px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
     .sponsor{
         height: auto;
     }
-    .sponsorContent{
+    .sponsor__content{
       /*display property will be overriden as any class further inside this scope*/
-      height: auto;
-      display: flex;
-      flex-direction: column;
+        height: auto;
+        display: flex;
+        overflow: hidden;
+        
     }
-    .social-button{
-        width: 300px;
-        padding: 20px;
-        border: medium dashed #F4F7FF;
+
+
+    .slider{
+        width: 165px;
+        height: 200px;
+        margin: auto;
+        margin-top: 25px;
+        border: 1px solid black;
+        position: relative;
+        overflow: hidden;
     }
 }
 
