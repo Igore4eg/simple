@@ -14,63 +14,66 @@
     <header>
         <div class="container">
             <div class="headerContent">
-                
-                    <div class="headerLogo">
-                    <img src=".\img\logo.svg" alt=""> 
-                    </div>
 
-                    <nav class="menu">
-                        <div class="headerButton" id="buttonHome"><a href="#">Home</a></div>
-                        <div class="headerButton"><a href="#">Blog</a></div>
-                        <div class="headerButton"><a href="#">Features</a></div>
-                        <div class="headerButton"><a href="#">Pricing</a></div>
-                        <div class="headerButton"><a href="#">Documentation</a></div>
-                    </nav>
-                
+                <img src=".\img\logo.svg" alt="logo" class="header-logo"> 
+                    
+                <input type="checkbox" id="nav-check">
+                <label for="nav-check" id="nav-button">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times"></i>
+                </label>
 
+                <nav id="nav" class="menu nav mobile-hidden">
+                    <a href="#" class="headerButton" id="buttonHome">Home</a>
+                    <a href="#" class="headerButton">Blog</a>
+                    <a href="#" class="headerButton">Features</a>
+                    <a href="#" class="headerButton">Pricing</a>
+                    <a href="#" class="headerButton">Documentation</a>
+                </nav>
                 
-                    <div class=" socialMedia">
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://web.telegram.org/"> <i class="fab fa-telegram-plane"></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a> 
-                        <a href="https://medium.com/"><i class="fab fa-medium-m"></i> </a>
-                    </div>
+                <div class=" socialMedia">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://web.telegram.org/"> <i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a> 
+                    <a href="https://medium.com/"><i class="fab fa-medium-m"></i> </a>
+                </div>
 
-                    <div class="button-get-strtaed">
-                        <a href="#" class="getStarted">Get Started</a>
-                    </div>
+                <div class="button-get-strtaed">
+                    <a href="#" class="getStarted">Get Started</a>
+                </div>
                     
             </div>
         </div>
     </header>
 
-
-    <section class="heroImage">
-        <div class="main-slider">
-            <div class="main-slide " style="background-image: url('./img/page1.svg');">
-                <div class="main-slide-content">
-                    <div class="page-1-str-1">PLAN YOUR LIFE</div>
-                    <div class="page-1-str-2">Increase your <strong>productivity</strong></div> 
-                    <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. 
-                        Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p> 
-                    <button class="btn-play" aria-label="Play">
-                        Play
-                    </button>
+    <main>
+        <section class="heroImage">
+            <div class="main-slider">
+                <div class="main-slide " style="background-image: url('./img/page1.svg');">
+                    <div class="main-slide-content">
+                        <div class="page-1-str-1">PLAN YOUR LIFE</div>
+                        <div class="page-1-str-2">Increase your <strong>productivity</strong></div> 
+                        <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. 
+                            Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p> 
+                        <a href="#" class="button-play">
+                            <i class="fas fa-play play_1"></i>
+                        </a>
+                    </div>
                 </div>
+            </div>            
+        </section>
+
+        <section class="sponsor ">
+            <div class="sponsorContent container">
+                <a href="https://www.atlassian.com/ru/software/bitbucket" class="social-button"><img src=".\img\Bitbucket.svg" alt="Bitbucket"></a>
+                <a href="https://www.apple.com/ru/watch/" class="social-button"><img src=".\img\apple.svg" alt="AppleWatch"> </a>
+                <a href="https://www.facebook.com/" class="social-button"><img src=".\img\facebook.svg" alt="Facebook"> </a>
+                <a href="https://www.atlassian.com/ru" class="social-button"><img src=".\img\Atlassian.svg" alt="Atlassian"></a>
+                <a href="https://www.audi.ua/ua" class="social-button"><img src=".\img\audi.svg" alt="Audi"></a>
             </div>
-        </div>            
-    </section>
+        </section>
 
-    <section class="sponsor ">
-        <div class="sponsorContent container">
-            <a href="https://www.atlassian.com/ru/software/bitbucket"><img src=".\img\Bitbucket.svg" alt="Bitbucket"></a>
-            <a href="https://www.apple.com/ru/watch/"><img src=".\img\apple.svg" alt="AppleWatch"> </a>
-            <a href="https://www.facebook.com/"><img src=".\img\facebook.svg" alt="Facebook"> </a>
-            <a href="https://www.atlassian.com/ru"><img src=".\img\Atlassian.svg" alt="Atlassian"></a>
-            <a href="https://www.audi.ua/ua"><img src=".\img\audi.svg" alt="Audi"></a>
-        </div>
-    </section>
-
+<<<<<<< HEAD
     <section class="plan__and__manage">
         <div class="container">
             <div class="page__2 row ">
@@ -79,41 +82,55 @@
                         <span class="page-1-str-1">DESKTOP AND MOBILE APP</span> 
                         <H1 class="page-1-str-2">Plan and manage</H1> 
                         <span class="page-1-str-3">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. 
+=======
+        <section class="planAndManage">
+            <div class="container">
+                <div class="page__2 row">
+                    <div class="page-2-1">
+                        <div class="page-1-str-1">DESKTOP AND MOBILE APP</div> 
+                        <h2 class="page-1-str-2"><strong>Plan</strong> and <strong>manage</strong></h2> 
+                        <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. 
+>>>>>>> 240f90d9eaa0f463e81e384f2999cb51542e607a
                             Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. 
-                            Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.</span>
+                            Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.</p>
 
-                        <div class="page-2-buttons">
-                                <a href="#" class="page-2-button-1">View video <i class="fas fa-play"></i></a>
-                                <a href="#" class="page-2-button-2">See features</a>
-                        </div>
+                        <div class="group-button">
+                            <a href="#" class="page-2-button-1">View video <i class="fas fa-play play_2"></i></a>
+                            <a href="#" class="page-2-button-2">See features</a>
+                        </div>                        
                     </div>
+                    
+                    <img src=".\img\illustration.png" alt="Plan_and_manage">                  
+                    
                 </div>
+<<<<<<< HEAD
                 
                 <div class="page-2-2">
                         <img src=".\img\illustration.png" alt="" >
                 </div>                    
                 
+=======
+>>>>>>> 240f90d9eaa0f463e81e384f2999cb51542e607a
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="page__3">
-        <div class="container__3">
-            <div class="page__3_main" style="background-image: url('./img/clouds_page_3.svg');">
-                <div class="content__3">
-                    <div>
-                        ABOUT US
-                    </div>
-                    <div>
-                        Read about our app
+        <section class="page__3">
+            <div class="container__3" style="background-image: url('./img/clouds_page_3.svg'); ">
+                <div class="page__3_main" >
+                    <div class="content__3">
+                        <div>
+                            ABOUT US
+                        </div>
+                        <div>
+                            Read about our app
+                        </div>
                     </div>
                 </div>
+                
             </div>
-            
-        </div>
 
-    </section>
-    
+        </section>
+    </main>
 
 
 </body>

@@ -2,6 +2,8 @@ a{
     text-decoration: none; 
 }
 
+
+
 body{
     display: flex;
     width: auto;
@@ -32,42 +34,71 @@ header{
 }
 
 .headerContent{
-    display: grid;
-    grid-template-columns: 64px 1fr 175px 115px;
+    display: flex;
     padding: 18px 0;
-    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        height: auto;
+    }
     
+    .headerContent{
+      /*display property will be overriden as any class further inside this scope*/
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+    }
+    .menu{
+        /*display property will be overriden as any class further inside this scope*/
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+      }
+    .headerButton{
+        margin: 0px;
+        padding: 30px auto;
+    }
+}
+
+.header-logo{
+    display: inline-flex;
 }
 
 .menu{
     display: flex;
-    justify-content: space-between;
+    flex-grow: 3;
+    justify-content: start;
+    align-items: center;
     font-family: Quicksand;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
     color: #697CA6;
-    width: 1fr;
+    margin-left: 50px;
 }
 
 .headerButton{
-    padding: 21px;
     font-size: 12px;
     line-height: 15px;
     text-shadow: 0px 0px 5px #E6E6E6;
+    margin: 21px;
 }
 
 .socialMedia{
-    height: 17px;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     text-align: center;
-    padding: 21px 0;
+    width: 176px;
+    margin: 0 50px;
 }
 
 .fab{
-    padding: 0 15px;
+    padding: 15px;
 }
 .fa-facebook-f{
     color: #B6BAC7;
@@ -83,6 +114,10 @@ header{
 
 .fa-medium-m{
     color: #757E9A;
+}
+
+.button-get-strtaed{
+    width: 115px;
 }
 
 .getStarted{
@@ -110,15 +145,79 @@ header{
     color: #5E81FE;
 }
 
+#nav-check, #nav-button {
+    display: none;
+}
+
+#nav-check:checked ~ #nav-button > :nth-child(1){
+    display:none;
+}
+#nav-check:checked ~ #nav-button > :nth-child(2){
+    display:inline-block;
+}
+#nav-check:checked ~ #nav.nav{
+    display:block;
+}
+
+@media screen and (max-width: 600px) {
+    #nav-button {
+        display: inline-block
+    }
+    #nav {
+        display: none;
+    }
+    .headerButton{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+          /*display property will be overriden as any class further inside this scope*/
+    header{
+        height: auto;
+    }
+    
+    .headerContent{
+
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+    }
+    .menu{
+       
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        }
+
+    .headerButton{
+        text-align: center;
+        width: 300px;
+        margin: 0px;
+        padding: 10px;
+        background-color: #adb8cf;
+    }
+    .socialMedia{
+        display:none;
+    }
+    .header-logo{
+        display:none;
+    }
+}
+
 .main-slider{
     height: 570px;
+    border-top: 1px solid #D8E3FE;
+    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
 }
 .main-slide{
     height: 100%;
 	display: flex;
     justify-content: center;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center;
 }
 .main-slide-content{
 	max-width: 613px;
@@ -148,6 +247,24 @@ header{
 .page-1-str-2 strong{
     font-weight: 500;
 }
+.button-play{
+    background:  #FFFFFF;
+    padding: 14px 16px 13px 17.25px;
+    border-radius: 50%; 
+    line-height: 70px;
+    text-align: center;
+}
+
+i.fas{
+    padding: 0;
+}
+.fa-play{
+    padding: 0;
+}
+
+.play_1{
+    color: #5E81FF;
+}
 
 .main-slide-content p {
 	font-family: 'Roboto';
@@ -164,32 +281,70 @@ header{
     align-items: center;
     background: #FFFFFF;
     justify-content: center;
+    border-top: 1px solid #D8E3FE;
+    border-bottom: 1px solid #D8E3FE;
 }
+
 
 .sponsorContent{
     display: flex;
     height: 29px;
     align-items: center;
-    justify-content: space-around;;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+    .sponsor{
+        height: auto;
+    }
+    .sponsorContent{
+      /*display property will be overriden as any class further inside this scope*/
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .social-button{
+        width: 300px;
+        padding: 20px;
+        border: medium dashed #F4F7FF;
+    }
 }
 
 
 .planAndManage{
     height: 776px;
     background: #F5F8FF;
+    display: flex;
+    justify-content: center;
 }
 
-.page-2-buttons{
+.row{
+    margin: 0px 0px;
+    }
+
+.page__2{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.page-2-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 415px;
 
 }
 
+.group-button{
+    margin-top: 47px;
+}
 .page-2-button-1{
+    width: 130px;
     font-family: 'Quicksand';    
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
     line-height: 16px;
-    padding: 16px 20px;
     border-radius: 2px;
     padding: 13px 25px;
     color:  #FFFFFF;;
@@ -201,22 +356,23 @@ header{
 }
 
 .page-2-button-2{
+    width: 130px;
     font-family: 'Quicksand';    
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    padding: 16px 20px;
+    padding: 13px 21px;
     border-radius: 2px;
     color:  #ADB4D2;
     font-style: normal;
     align-items: center;
     text-align: center;
-    padding: 12px 31px;
     background: #F5F8FF;
     display: inline-flex;
     border: 1px solid #D1D1E4;
     box-sizing: border-box;
+<<<<<<< HEAD
     border-radius: 2px;
 }
 .fa-play{
@@ -248,19 +404,27 @@ header{
 }
 
 
+=======
+    
+}
+
+.play_2{
+    color: #FFFFFF;
+    padding: 0 6px;
+}
+
+>>>>>>> 240f90d9eaa0f463e81e384f2999cb51542e607a
 
 .page__3{
     height: 885px;
+    border-top: 1px solid #D8E3FE;
+    border-bottom: 1px solid #D8E3FE;
 }
 .container__3{
     height: 633px;
 } 
 
 .page__3_main{
-    height: 100%;
-	display: flex;
-    justify-content: center;
-    background-size: cover;
-    
+    display: flex;
+    justify-content: center;  
 }
-
