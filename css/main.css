@@ -293,26 +293,25 @@ i.fas{
 
 @media screen and (max-width: 768px) {
     .sponsor{
-        height: auto;
+        height: 145px;
     }
-    .sponsor__content{
-      /*display property will be overriden as any class further inside this scope*/
-        height: auto;
-        display: flex;
-        overflow: hidden;
-        
-    }
-
 
     .slider{
         width: 165px;
-        height: 200px;
-        margin: auto;
-        margin-top: 25px;
+        height: 50px;
         border: 1px solid black;
         position: relative;
         overflow: hidden;
     }
+
+    .slide{
+        width: 165px;
+        height: 50px;
+        position: absolute;
+        text-align: center;  
+    }
+
+
 }
 
 
