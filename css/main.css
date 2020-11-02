@@ -285,33 +285,90 @@ i.fas{
 }
 
 
-.sponsor__content{
+.sponsor__content-slides{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.sponsor__content-slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sponsor__content-slide > input {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
     .sponsor{
         height: 145px;
     }
-
-    .slider{
-        width: 165px;
-        height: 50px;
-        border: 1px solid black;
+    
+    .sponsor__content-slide {
+        margin: 50px auto ;
         position: relative;
+              
+    }
+
+    .sponsor__content-slides{
+        height: inherit;
         overflow: hidden;
+        position: relative;
+        width: inherit;
     }
 
-    .slide{
-        width: 165px;
-        height: 50px;
+    .sponsor__content-sliders{
+        height: inherit;
+        opacity: 0;
         position: absolute;
-        text-align: center;  
+        width: inherit;
+        z-index: 0;
+    }
+    .sponsor__content-slide .sponsor__content-control{
+        position: absolute; 
+        margin-left: -50px;
+        left: 50%;
+        bottom: -10px;
+    }
+    .sponsor__content-slide label{
+        cursor: pointer;
+        display: inline-block;
+        height: 8px;
+        margin: 10px;
+        position: relative;
+        width: 8px;
+        border-radius: 20%;
+    }
+    .sponsor__content-slide label :after{
+        border: 2px solid green;
+        content: " ";
+        display: block;
+        height: 12px;
+        left: -4px;
+        position: absolute;
+        top: -4px;
+        width: 12px;
+        border-radius: 20%;
     }
 
+    #point1:checked ~ .sponsor__content-control label:nth-of-type(1),
+    #point2:checked ~ .sponsor__content-control label:nth-of-type(2),
+    #point3:checked ~ .sponsor__content-control label:nth-of-type(3),
+    #point4:checked ~ .sponsor__content-control label:nth-of-type(4),
+    #point5:checked ~ .sponsor__content-control label:nth-of-type(5){
+        background: green;
+    }
 
+    #point1:checked ~ .sponsor__content_slides > #sponsor__content_slide-1,
+    #point2:checked ~ .sponsor__content_slides > #sponsor__content_slide-1,
+    #point3:checked ~ .sponsor__content_slides > #sponsor__content_slide-1,
+    #point4:checked ~ .sponsor__content_slides > #sponsor__content_slide-1,
+    #point5:checked ~ .sponsor__content_slides > #sponsor__content_slide-1 {
+        opacity: 1;
+        z-index: 1;
+    }
 }
 
 
