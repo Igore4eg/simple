@@ -186,15 +186,17 @@ header{
       justify-content: center; 
     }
     .menu{
-       
         display: flex;
         flex-direction: column;
-        margin-left: 0px;
-        }
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100px;
+    }
 
     .headerButton{
         text-align: center;
-        width: 300px;
+        width: 100%;
         margin: 0px;
         padding: 10px;
         background-color: #adb8cf;
@@ -291,11 +293,7 @@ i.fas{
     justify-content: space-between;
 }
 
-.sponsor__content-slide{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .sponsor__content-slide > input {
     display: none;
