@@ -211,11 +211,13 @@ header{
     label input:checked + .menu-button + .menu { 
         opacity: 1; 
     }
+        
 
     label .menu{
+        display: block;
         z-index: 200;
         position: absolute;
-        top: 50%;
+        top: 150px;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -237,7 +239,7 @@ header{
         width: 100%;
         margin: 0px;
         padding: 10px;
-        background-color: #adb8cf;
+        border: 1px solid black;
     }
     .socialMedia{
         display:none;
@@ -313,25 +315,19 @@ i.fas{
 }
 
 .sponsor{
-    display: flex;
     height: 145px;
-    align-items: center;
     background: #FFFFFF;
     border-top: 1px solid #D8E3FE;
     border-bottom: 1px solid #D8E3FE;
 }
 
-
-.sponsor__content-slides{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
 .sponsor__content-slide > input {
     display: none;
+}
+
+.sponsor__content_slides{
+    display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
