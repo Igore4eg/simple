@@ -37,7 +37,7 @@ header{
     display: flex;
     padding: 18px 0;
     align-items: center;
-    justify-content: center; 
+    justify-content: space-around; 
 }
 
 
@@ -48,9 +48,12 @@ header{
     
 }
 
+.headerContent label {
+    flex-grow: 1;
+}
 .menu{
     display: flex;
-    flex-grow: 3;
+    flex-grow: 1;
     justify-content: start;
     align-items: center;
     font-family: Quicksand;
@@ -138,7 +141,11 @@ header{
     .headerContent{
 
       display: flex;
-      
+      justify-content: center;
+    }
+
+    .headerContent label {
+        flex-grow: 0;
     }
 
     label .menu-button {
@@ -235,6 +242,7 @@ header{
    
 
     .headerButton{
+        order: 1;
         text-align: center;
         width: 100%;
         margin: 0px;
@@ -243,6 +251,11 @@ header{
     }
     .socialMedia{
         display:none;
+    }
+
+    .header-logo{
+        order: 2;
+        flex
     }
 }
 
