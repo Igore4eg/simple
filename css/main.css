@@ -73,9 +73,7 @@ header{
 
 .socialMedia{
     display: inline-flex;
-    justify-content: space-between;
-    text-align: center;
-    width: 176px;
+
 }
 
 .fab{
@@ -98,9 +96,6 @@ header{
     color: #757E9A;
 }
 
-.button-get-strtaed{
-    width: 115px;
-}
 
 .getStarted{
     font-family: Quicksand;    
@@ -255,7 +250,6 @@ header{
 
     .header-logo{
         order: 2;
-        flex
     }
 }
 
