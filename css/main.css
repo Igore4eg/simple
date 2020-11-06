@@ -178,6 +178,7 @@ header{
         background: #000;
     }
 
+    
     label .hamburger:before { top: -10px; }
 
     label .hamburger:after { bottom: -10px; }
@@ -187,6 +188,16 @@ header{
     label input:checked + .menu-button {
         box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
         border-radius: 0;
+        content: 'XXX';
+        border: 1px solid red;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
     }
     
     label input:checked + .menu-button .hamburger {
