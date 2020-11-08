@@ -2,12 +2,8 @@ a{
     text-decoration: none; 
 }
 
-
-
 body{
-    display: flex;
     width: auto;
-    flex-direction: column;
     color: #8d96bd;
 }
 
@@ -19,7 +15,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-    z-index: 1;
+    z-index: 10;
 }
 .container {
     width: 1200px;
@@ -35,42 +31,24 @@ header{
 
 .headerContent{
     display: flex;
-    padding: 18px 0;
     align-items: center;
-    justify-content: center; 
+    justify-content: space-around; 
 }
 
-@media screen and (max-width: 768px) {
-    header{
-        height: auto;
-    }
-    
-    .headerContent{
-      /*display property will be overriden as any class further inside this scope*/
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-    }
-    .menu{
-        /*display property will be overriden as any class further inside this scope*/
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-      }
-    .headerButton{
-        margin: 0px;
-        padding: 30px auto;
-    }
-}
+
 
 .header-logo{
     display: inline-flex;
+    margin: 0 20px;
+    
 }
 
+.headerContent label {
+    flex-grow: 1;
+}
 .menu{
     display: flex;
-    flex-grow: 3;
+    flex-grow: 1;
     justify-content: start;
     align-items: center;
     font-family: Quicksand;
@@ -79,7 +57,6 @@ header{
     font-size: 12px;
     line-height: 15px;
     color: #697CA6;
-    margin-left: 50px;
 }
 
 .headerButton{
@@ -91,14 +68,12 @@ header{
 
 .socialMedia{
     display: inline-flex;
-    justify-content: space-between;
-    text-align: center;
-    width: 176px;
-    margin: 0 50px;
+
 }
 
 .fab{
-    padding: 15px;
+    padding: 5px;
+    margin: 10px;
 }
 .fa-facebook-f{
     color: #B6BAC7;
@@ -116,9 +91,6 @@ header{
     color: #757E9A;
 }
 
-.button-get-strtaed{
-    width: 115px;
-}
 
 .getStarted{
     font-family: Quicksand;    
@@ -145,65 +117,150 @@ header{
     color: #5E81FE;
 }
 
-#nav-check, #nav-button {
+#menu-button{
     display: none;
 }
 
-#nav-check:checked ~ #nav-button > :nth-child(1){
-    display:none;
-}
-#nav-check:checked ~ #nav-button > :nth-child(2){
-    display:inline-block;
-}
-#nav-check:checked ~ #nav.nav{
-    display:block;
-}
-
-@media screen and (max-width: 600px) {
-    #nav-button {
-        display: inline-block
-    }
-    #nav {
-        display: none;
-    }
-    .headerButton{
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 @media screen and (max-width: 768px) {
-          /*display property will be overriden as any class further inside this scope*/
+      
     header{
-        height: auto;
+        height: 80px;
     }
     
     .headerContent{
 
-      height: auto;
       display: flex;
-      flex-direction: column;
-      justify-content: center; 
+      justify-content: center;
     }
-    .menu{
-       
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-        }
+
+    .headerContent label {
+        flex-grow: 0;
+    }
+
+    label .menu-button {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 20;
+        width: 80px;
+        height: 80px;
+        background: #FFF;
+        border-radius: 50% 50% 50% 50%;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+        cursor: pointer;
+      }
+    
+    label .hamburger {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        width: 30px;
+        height: 2px;
+        background: #000;
+        display: block;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+
+    label .hamburger:after, label .hamburger:before {
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #000;
+    }
+
+    
+    label .hamburger:before { top: -10px; }
+
+    label .hamburger:after { bottom: -10px; }
+
+    label input { display: none; }
+
+    label input:checked + .menu-button {
+        box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+        border-radius: 0;
+        content: 'XXX';
+        border: 1px solid red;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+    }
+    
+    label input:checked + .menu-button .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+    
+    label input:checked + .menu-button .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+    }
+    
+    label input:checked + .menu-button .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+    }
+    
+    label input:checked + .menu-button + .menu { 
+        opacity: 1;
+        pointer-events: auto; 
+    }
+
+    label input:checked + label .menu{
+        pointer-events: auto;
+    }
+        
+
+    label .menu{
+        display: block;
+        z-index: 25;
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
+
+    label .headerButton{
+        margin-bottom: 1em;
+        display: block;
+        color: #000;
+        text-decoration: none;
+    }
+   
 
     .headerButton{
+        order: 1;
         text-align: center;
-        width: 300px;
+        width: 100%;
         margin: 0px;
         padding: 10px;
-        background-color: #adb8cf;
+        border: 1px solid black;
     }
     .socialMedia{
         display:none;
     }
+
     .header-logo{
-        display:none;
+        order: 2;
     }
 }
 
@@ -276,37 +333,88 @@ i.fas{
 }
 
 .sponsor{
-    display: flex;
     height: 145px;
-    align-items: center;
     background: #FFFFFF;
-    justify-content: center;
     border-top: 1px solid #D8E3FE;
     border-bottom: 1px solid #D8E3FE;
 }
 
+.sponsor__content-slide > input {
+    display: none;
+}
 
-.sponsorContent{
+.sponsor__content_slides{
     display: flex;
-    height: 29px;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
     .sponsor{
-        height: auto;
+        height: 145px;
     }
-    .sponsorContent{
-      /*display property will be overriden as any class further inside this scope*/
-      height: auto;
-      display: flex;
-      flex-direction: column;
+    
+    .sponsor__content-slide {
+        margin: 50px auto ;
+        position: relative;
+              
     }
-    .social-button{
-        width: 300px;
-        padding: 20px;
-        border: medium dashed #F4F7FF;
+
+    .sponsor__content-slides{
+        height: inherit;
+        overflow: hidden;
+        position: relative;
+        width: inherit;
+    }
+
+    .sponsor__content-sliders{
+        height: inherit;
+        opacity: 0;
+        position: absolute;
+        width: inherit;
+        z-index: 0;
+    }
+    .sponsor__content-slide .sponsor__content-control{
+        position: absolute; 
+        margin-left: -50px;
+        left: 50%;
+        bottom: -10px;
+    }
+    .sponsor__content-slide label{
+        cursor: pointer;
+        display: inline-block;
+        height: 8px;
+        margin: 10px;
+        position: relative;
+        width: 8px;
+        border-radius: 20%;
+    }
+    .sponsor__content-slide label:after{
+        border: 2px solid green;
+        content: " ";
+        display: block;
+        height: 16px;
+        left: -4px;
+        position: absolute;
+        top: -4px;
+        width: 16px;
+        border-radius: 20%;
+    }
+
+    #point1:checked ~ .sponsor__content-control label:nth-of-type(1),
+    #point2:checked ~ .sponsor__content-control label:nth-of-type(2),
+    #point3:checked ~ .sponsor__content-control label:nth-of-type(3),
+    #point4:checked ~ .sponsor__content-control label:nth-of-type(4),
+    #point5:checked ~ .sponsor__content-control label:nth-of-type(5){
+        background: green;
+    }
+
+    #point1:checked ~ .sponsor__content_slides > #sponsor__content_slide-1,
+    #point2:checked ~ .sponsor__content_slides > #sponsor__content_slide-2,
+    #point3:checked ~ .sponsor__content_slides > #sponsor__content_slide-3,
+    #point4:checked ~ .sponsor__content_slides > #sponsor__content_slide-4,
+    #point5:checked ~ .sponsor__content_slides > #sponsor__content_slide-5 {
+        opacity: 1;
+        z-index: 1;
     }
 }
 

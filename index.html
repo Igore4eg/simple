@@ -17,20 +17,19 @@
 
                 <img src=".\img\logo.svg" alt="logo" class="header-logo"> 
                     
-                <input type="checkbox" id="nav-check">
-                <label for="nav-check" id="nav-button">
-                    <i class="fa fa-bars"></i>
-                    <i class="fa fa-times"></i>
+                <label>
+                    <input id="menu-button" type="checkbox">
+                    <span class="menu-button">
+                        <span class="hamburger"></span>
+                    </span>
+                    <nav class="menu ">
+                        <a href="#" class="headerButton" id="buttonHome">Home</a>
+                        <a href="#" class="headerButton">Blog</a>
+                        <a href="#" class="headerButton">Features</a>
+                        <a href="#" class="headerButton">Pricing</a>
+                        <a href="#" class="headerButton">Documentation</a>
+                    </nav>
                 </label>
-
-                <nav id="nav" class="menu nav mobile-hidden">
-                    <a href="#" class="headerButton" id="buttonHome">Home</a>
-                    <a href="#" class="headerButton">Blog</a>
-                    <a href="#" class="headerButton">Features</a>
-                    <a href="#" class="headerButton">Pricing</a>
-                    <a href="#" class="headerButton">Documentation</a>
-                </nav>
-                
                 <div class=" socialMedia">
                     <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://web.telegram.org/"> <i class="fab fa-telegram-plane"></i></a>
@@ -38,9 +37,8 @@
                     <a href="https://medium.com/"><i class="fab fa-medium-m"></i> </a>
                 </div>
 
-                <div class="button-get-strtaed">
-                    <a href="#" class="getStarted">Get Started</a>
-                </div>
+                <a href="#" class="getStarted">Get Started</a>
+                
                     
             </div>
         </div>
@@ -63,13 +61,30 @@
             </div>            
         </section>
 
-        <section class="sponsor ">
-            <div class="sponsorContent container">
-                <a href="https://www.atlassian.com/ru/software/bitbucket" class="social-button"><img src=".\img\Bitbucket.svg" alt="Bitbucket"></a>
-                <a href="https://www.apple.com/ru/watch/" class="social-button"><img src=".\img\apple.svg" alt="AppleWatch"> </a>
-                <a href="https://www.facebook.com/" class="social-button"><img src=".\img\facebook.svg" alt="Facebook"> </a>
-                <a href="https://www.atlassian.com/ru" class="social-button"><img src=".\img\Atlassian.svg" alt="Atlassian"></a>
-                <a href="https://www.audi.ua/ua" class="social-button"><img src=".\img\audi.svg" alt="Audi"></a>
+        <section class="sponsor">
+            <div class="sponsor__content-slide container" >
+                <input type="radio" name="sponsor__content-sliders" id="point1" checked>
+                <input type="radio" name="sponsor__content-sliders" id="point2">
+                <input type="radio" name="sponsor__content-sliders" id="point3">
+                <input type="radio" name="sponsor__content-sliders" id="point4">
+                <input type="radio" name="sponsor__content-sliders" id="point5">
+            
+            <div class="sponsor__content_slides">
+                
+                <a href="https://www.atlassian.com/ru/software/bitbucket" id="sponsor__content_slide-1" class="sponsor__content__button sponsor__content-sliders"><img src=".\img\Bitbucket.svg" alt="Bitbucket"></a>
+                <a href="https://www.apple.com/ru/watch/" id="sponsor__content_slide-2" class="sponsor__content__button sponsor__content-sliders"><img src=".\img\apple.svg" alt="AppleWatch"> </a>
+                <a href="https://www.facebook.com/" id="sponsor__content_slide-3" class="sponsor__content__button sponsor__content-sliders"><img src=".\img\facebook.svg" alt="Facebook"> </a>
+                <a href="https://www.atlassian.com/ru" id="sponsor__content_slide-4" class="sponsor__content__button sponsor__content-sliders"><img src=".\img\Atlassian.svg" alt="Atlassian"></a>
+                <a href="https://www.audi.ua/ua" id="sponsor__content_slide-5" class="sponsor__content__button sponsor__content-sliders"><img src=".\img\audi.svg" alt="Audi"></a>
+            </div>
+            <div class="sponsor__content-control">
+                <label for="point1"></label>
+                <label for="point2"></label>
+                <label for="point3"></label>
+                <label for="point4"></label>
+                <label for="point5"></label>
+            </div>
+
             </div>
         </section>
 
