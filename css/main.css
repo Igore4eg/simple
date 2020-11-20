@@ -389,7 +389,7 @@ i.fas{
         border-radius: 20%;
     }
     .sponsor__content-slide label:after{
-        border: 2px solid green;
+        border: 2px solid #5F82FF;
         content: " ";
         display: block;
         height: 16px;
@@ -405,7 +405,7 @@ i.fas{
     #point3:checked ~ .sponsor__content-control label:nth-of-type(3),
     #point4:checked ~ .sponsor__content-control label:nth-of-type(4),
     #point5:checked ~ .sponsor__content-control label:nth-of-type(5){
-        background: green;
+        background: #5F82FF;
     }
 
     #point1:checked ~ .sponsor__content_slides > #sponsor__content_slide-1,
@@ -467,7 +467,7 @@ i.fas{
 
 .page-2-button-2{
     width: 130px;
-    font-family: 'Quicksand';    
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -511,12 +511,18 @@ i.fas{
     height: 885px;
     border-top: 1px solid #D8E3FE;
     border-bottom: 1px solid #D8E3FE;
+    
+    justify-content: center;
 }
-.container__3{
-    height: 633px;
-} 
-
 .page__3_main{
+    margin-top: 141px;
+    margin-bottom: 171px;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    background-size: cover;
+    background-position: center; 
+}
+
+.content__3{
+    height: 573px;
 }
