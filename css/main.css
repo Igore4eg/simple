@@ -511,10 +511,8 @@ i.fas{
     height: 885px;
     border-top: 1px solid #D8E3FE;
     border-bottom: 1px solid #D8E3FE;
-    
-    justify-content: center;
 }
-.page__3_main{
+.page__3_container{
     margin-top: 141px;
     margin-bottom: 171px;
     display: flex;
@@ -523,6 +521,6 @@ i.fas{
     background-position: center; 
 }
 
-.content__3{
+.page__3-content{
     height: 573px;
 }
