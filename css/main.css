@@ -679,3 +679,20 @@ i.fas{
     line-height: 23px;
     letter-spacing: 0.03em;
 }
+
+.page__5{
+    height: 865px;
+    background: #F5F8FF;
+    display: flex;
+}
+
+.page__5_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__5_content{
+    display: flex;
+    flex-direction: column;   
+}
