@@ -498,12 +498,31 @@ i.fas{
     .page-2-1{
         margin: 30px 60px;
     }
+    .group-button{
+        display: flex;
+        justify-content: center;
+    }
+    .page-2-button-1{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page-2-2{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 430px){
-    .page-2-1{
-        margin: 0;
-        margin-top: 30px;
+    .group-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-2-button-1{
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 }
 
@@ -621,6 +640,22 @@ i.fas{
     font-size: 11px;
     line-height: 19px;
     color: #ADB3CB;
+}
+
+@media screen and (max-width: 768px) {
+    .page__3-hyphen{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .page__3-hyphen{
+        display: none;
+    }
+
+    
+
 }
 
 .page__4{
