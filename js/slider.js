@@ -1,7 +1,8 @@
 'use strict';
-    window.onload = function () {
-      return function (selector, config) {
-        var
+window.onload = () => {
+  var slideShow = (function () {
+    return function (selector, config) {
+      var
           _slider = document.querySelector(selector), // основный элемент блока
           _sliderContainer = _slider.querySelector('.page__3-slider__items'), // контейнер для .slider-item
           _sliderItems = _slider.querySelectorAll('.page__3-slider__item'), // коллекция .slider-item
@@ -210,8 +211,9 @@
           }
         }
       }
-    };
+  })();
 
-    slideShow('.slider', {
-      isAutoplay: true
-    });
+  slideShow('.slider', {
+    isAutoplay: true
+  });
+};
