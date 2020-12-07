@@ -1,5 +1,5 @@
 'use strict';
-    window.onload(function () {
+    window.onload = function () {
       return function (selector, config) {
         var
           _slider = document.querySelector(selector), // основный элемент блока
@@ -210,7 +210,7 @@
           }
         }
       }
-    });
+    };
 
     slideShow('.slider', {
       isAutoplay: true
