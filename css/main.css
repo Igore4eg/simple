@@ -834,6 +834,19 @@ i.fas{
     letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 768px) {
+    .page__4-right{
+        padding-left: 20px;
+    }
+    .page__4-left{
+        padding-right: 20px;
+    }
+
+    .page__4-text-2{
+        width: unset;
+    }
+}
+
 .page__5{
     height: 865px;
     background: #F5F8FF;
