@@ -505,11 +505,28 @@ i.fas{
     .page-2-button-1{
         margin-right: 10px;
     }
+    .page-1-str-1{
+        text-align: center;
+    }
+
+    .page-1-str-2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .page-2-1{
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .page-2-2{
         display: none;
+    }
+
+    .page-2-1{
+        margin: unset;
     }
 
 }
