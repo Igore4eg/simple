@@ -5,7 +5,7 @@
           _slider = document.querySelector(selector), // основный элемент блока
           _sliderContainer = _slider.querySelector('.page__3-slider__items'), // контейнер для .slider-item
           _sliderItems = _slider.querySelectorAll('.page__3-slider__item'), // коллекция .slider-item
-          _sliderControls = _slider.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControls = _slider.querySelectorAll('.page__3-slider__control'), // элементы управления
           _currentPosition = 0, // позиция левого активного элемента
           _transformValue = 0, // значение транфсофрмации .slider_wrapper
           _transformStep = 100, // величина шага (для трансформации)
@@ -113,7 +113,7 @@
         // функция, добавляющая индикаторы к слайдеру
         var _addIndicators = function () {
           var indicatorsContainer = document.createElement('ol');
-          indicatorsContainer.classList.add('slider__indicators');
+          indicatorsContainer.classList.add('page__3-slider__indicators');
           for (var i = 0, length = _sliderItems.length; i < length; i++) {
             var sliderIndicatorsItem = document.createElement('li');
             if (i === 0) {
@@ -123,7 +123,7 @@
             indicatorsContainer.appendChild(sliderIndicatorsItem);
           }
           _slider.appendChild(indicatorsContainer);
-          _indicatorItems = _slider.querySelectorAll('.slider__indicators > li')
+          _indicatorItems = _slider.querySelectorAll('.page__3-slider__indicators > li')
         };
 
         var _isTouchDevice = function () {
@@ -151,13 +151,13 @@
             });
           } else {
             for (var i = 0, length = _sliderControls.length; i < length; i++) {
-              _sliderControls[i].classList.add('slider__control_show');
+              _sliderControls[i].classList.add('page__3-slider__control_show');
             }
           }
           _slider.addEventListener('click', function (e) {
-            if (e.target.classList.contains('slider__control')) {
+            if (e.target.classList.contains('page__3-slider__control')) {
               e.preventDefault();
-              _move(e.target.classList.contains('slider__control_next') ? 'next' : 'prev');
+              _move(e.target.classList.contains('page__3-slider__control_next') ? 'next' : 'prev');
               _startAutoplay();
             } else if (e.target.getAttribute('data-slide-to')) {
               e.preventDefault();
