@@ -1,5 +1,5 @@
 'use strict';
-    window.on('load', function () {
+    window.onload(function () {
       return function (selector, config) {
         var
           _slider = document.querySelector(selector), // основный элемент блока
