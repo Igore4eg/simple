@@ -768,10 +768,13 @@ i.fas{
         position: relative;
     }
 
-    
-  
+    .page__3-features{
+        justify-content: unset;
+    }
 
-
+    .page__3-icon{
+        width: unset;
+    }
 }
 
 .page__4{
