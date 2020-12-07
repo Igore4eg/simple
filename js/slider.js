@@ -213,7 +213,7 @@ window.onload = () => {
       }
   })();
 
-  slideShow('.slider', {
+  slideShow('.page__3-slider', {
     isAutoplay: true
   });
 };
