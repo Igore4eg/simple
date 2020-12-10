@@ -839,27 +839,19 @@ i.fas{
 .page__5-slide1{
     width: 958px;
     height: 394px;
+    background: #FFFFFF;
     border: 1px solid #D8E3FE;
     box-sizing: border-box;
     box-shadow: 0px 15px 50px #EFF4FF;
-    background-color: blue;
+    
 }
 
 .page__5-slide2{
     background-color: red;
-    width: 958px;
-    height: 394px;
-    border: 1px solid #D8E3FE;
-    box-sizing: border-box;
-    box-shadow: 0px 15px 50px #EFF4FF;
+
 }
 
 .page__5-slide3{
     background-color:green;
-    width: 958px;
-    height: 394px;
-    
-    border: 1px solid #D8E3FE;
-    box-sizing: border-box;
-    box-shadow: 0px 15px 50px #EFF4FF;
+
 }
